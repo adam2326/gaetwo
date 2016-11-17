@@ -1,6 +1,6 @@
 
 import logging
-
+from random import randint
 from flask import Flask
 
 
@@ -11,6 +11,9 @@ app = Flask(__name__)
 def hello():
     return 'Hello Adams New World!'
 
+@app.route('/random')
+def myrando():
+	return '<h1>{}</h1>'.format(randint(0,9))
 
 @app.errorhandler(500)
 def server_error(e):
