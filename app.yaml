@@ -1,0 +1,12 @@
+application: cloud-training-144023
+version: aplha001
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /random/.*
+  script: rando.app
+
+- url: .*
+  script: main.app
