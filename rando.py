@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/random')
 def myrando():
-	return '<h1>{}</h1>'.format(randint(0,9))
+	return 'random'
 
 @app.errorhandler(500)
 def server_error(e):
