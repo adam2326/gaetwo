@@ -3,11 +3,9 @@ import logging
 from random import randint
 
 
-random_number=randint(0,9)
-
 app = Flask(__name__)
 
-app.route('/random')
+@app.route('/random')
 def myrando():
 	return '<h1>{}</h1>'.format(randint(0,9))
 
