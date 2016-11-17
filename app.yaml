@@ -5,8 +5,5 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /random/.*
-  script: rando.app
-
 - url: /.*
   script: main.app
